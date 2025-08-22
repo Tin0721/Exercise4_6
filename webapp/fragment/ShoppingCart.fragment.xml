@@ -1,0 +1,42 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Table id="idTableSCart1" inset="false">
+        <headerToolbar>
+            <OverflowToolbar id="idOFT1">
+                <content>
+                    <Title id="idTableTitleSCart1" text="{i18n>shoppingTblTitle}"/>
+                    <ToolbarSpacer id="idTSpacer1"/>
+                    <Button id="idBtnAddItems" icon="sap-icon://cart-4" tooltip="{i18n>addToCartTooltip}" press="onAddItem"/>
+                </content>
+            </OverflowToolbar>
+        </headerToolbar>
+        <columns>
+            <Column id="idCol1_1">
+                <Text id="idColText1_1" text="{i18n>itemColText}" />
+            </Column>
+            <Column id="idCol2_1">
+                <Text id="idColText2_1" text="{i18n>quantityColText}" />
+            </Column>
+
+            <Column id="idCol3_1">
+                <Text id="idColText3_1" text="{i18n>priceColText}" />
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem id="idColListItem1_1" vAlign="Middle">
+                <cells>
+                    <Text id="idText1_1" text="iPhone 14 Pro Max" />
+                    <Text id="idText2_1" text="2" />
+                    <Text id="idText3_1" text="$2000" />
+                </cells>
+            </ColumnListItem>
+            <ColumnListItem id="idColListItem2_1" vAlign="Middle">
+                <cells>
+                    <Text id="idText4_1" text="Louis Vuitton Speedy" />
+                    <Text id="idText5_1" text="1" />
+                    <Text id="idText6_1" text="$14000" />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</core:FragmentDefinition>

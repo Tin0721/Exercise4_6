@@ -24,7 +24,9 @@
                             <Input id="idInputPhone" value="" visible="false"/>
                         </f:content>
                     </f:SimpleForm>
+                    <core:Fragment fragmentName="com.training.exer1geulin.fragment.ShoppingCart" type="XML" />
             </VBox>
+            <!--
             <Table id="idTableSCart" inset="false">
                 <headerToolbar>
                     <OverflowToolbar id="idOFT">
@@ -63,6 +65,7 @@
                     </ColumnListItem>
                 </items>
             </Table>
+            -->
             <footer>
                 <OverflowToolbar id="idOFTFooter">
                     <ToolbarSpacer id="idTSpacerFooter"/>
